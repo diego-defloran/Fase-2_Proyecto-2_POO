@@ -7,18 +7,18 @@
  * @author Javie
  */
 public class Usuario {
-    private String nombreUsuario, contraseña, correo, nombre, apellido;
+    private String nombreUsuario, contrasena, correo, nombre, apellido;
 
     /**
      *
      * @param nombreusuario
-     * @param contraseña
+     * @param contrasena
      * @param correo
      * @param nombre
      */
-    public Usuario(String nombreusuario, String contraseña, String correo, String nombre){
+    public Usuario(String nombreusuario, String contrasena, String correo, String nombre){
         this.nombreUsuario = nombreusuario;
-        this.contraseña = contraseña;
+        this.contrasena = contrasena;
         this.correo = correo;
         this.nombre = nombre;
        
@@ -36,8 +36,8 @@ public class Usuario {
      *
      * @return
      */
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasena() {
+        return contrasena;
     }
 
     /**
@@ -74,10 +74,10 @@ public class Usuario {
 
     /**
      *
-     * @param contraseña
+     * @param contrasena
      */
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     /**

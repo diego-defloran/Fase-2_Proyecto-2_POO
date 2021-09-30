@@ -23,7 +23,7 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-				} else if (opcion==4){
+				} else if (opcion2==4){
 					flag=false;
 					break; 
 				}
@@ -38,7 +38,7 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-				} else if (opcion==4){
+				} else if (opcion2==4){
 					flag=false;
 					break; 
 				}
@@ -53,7 +53,7 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-				} else if (opcion==4){
+				} else if (opcion2==4){
 					flag=false;
 					break; 
 				}
@@ -68,7 +68,7 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-				} else if (opcion==4){
+				} else if (opcion2==4){
 					flag=false;
 					break; 
 				}
@@ -83,7 +83,7 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-				} else if (opcion==4){
+				} else if (opcion2==4){
 					flag=false;
 					break; 
 				}
@@ -98,7 +98,7 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-				} else if (opcion==4){
+				} else if (opcion2==4){
 					flag=false;
 					break; 
 				}

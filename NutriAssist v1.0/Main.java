@@ -126,27 +126,24 @@ public class Main {
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==6){
-                  consejos = new Carbohidratos("CARBOHIDRATOS");
-                  String m = consejos.Bienvenida();
-                  opcion2 = vista.Pregunta2(m);
-                  if(opcion2==1){
-                      mensaje = consejos.Beneficios();
-                  } else if(opcion2==2){
-                      mensaje = consejos.Ejemplos();
-                  } else if(opcion2==3){
-                      mensaje = consejos.Cantidad(peso,altura,edad,sexo);
-                  } else if (opcion2==4){
-                      flag=false;
-                      break; 
-                  }
-              vista.Opcion(mensaje);
+		      		consejos = new Carbohidratos("CARBOHIDRATOS");
+                  		String m = consejos.Bienvenida();
+                 		opcion2 = vista.Pregunta2(m);
+                 		if(opcion2==1){
+					mensaje = consejos.Beneficios();
+                  		} else if(opcion2==2){
+                      			mensaje = consejos.Ejemplos();
+                  		} else if(opcion2==3){
+                     		 	mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+                  		} else if (opcion2==4){
+                      			flag=false;
+                      			break; 
+                  		}
+              			vista.Opcion(mensaje);
 			}
 		}
-    }
-      }
-      else if (opcion ==4){
+    } else if (opcion==4){
           
-      }
       }
       
        

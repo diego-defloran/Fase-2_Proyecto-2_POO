@@ -10,6 +10,23 @@ class Vista{
 		
 	}
 	
+	public int MenuGeneral(){
+		String OpcionesMenu = "\n\nSeleccione que la opción que le gustaría:\n" + 
+								"1. Ingresar\n"+
+								"2. Registrarte\n"+
+								"3. Consejos\n" + 
+			                                        "4. Salir\n";
+		System.out.println(OpcionesMenu);
+	        int opcion = scanner.nextInt();
+                return opcion;
+    }
+		
+		
+			
+	
+	
+	}
+	
 	public int PrimerMensaje(){
 		boolean flag = false;
 		int opcion=0;

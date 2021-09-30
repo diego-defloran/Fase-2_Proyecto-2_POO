@@ -180,7 +180,7 @@ class Vista{
      *
      */
     public void IngresaCorreo(){
-        System.out.println("\nINGREA TU CORREO");
+        System.out.println("\nINGRESA TU CORREO");
     }
 
     /**

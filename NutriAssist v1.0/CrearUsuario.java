@@ -1,4 +1,5 @@
 
+
 import com.csvreader.CsvWriter;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -53,11 +54,7 @@ public class CrearUsuario {
                  usuariosArray.add(values);
              }
              
-            for (int a = 0; a < usuariosArray.size(); a++){
-                System.out.println(usuariosArray.get(a)[1]);
-                System.out.println(usuariosArray.get(a)[2]);
-                    
-                } 
+           
             for (int a = 0; a < usuariosArray.size(); a++){
                 if (usuariosArray.get(a)[1].equals(nUsuario)){
                     for (int b = 0; b < usuariosArray.size(); b++){

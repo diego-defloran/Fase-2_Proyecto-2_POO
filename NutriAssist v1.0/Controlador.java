@@ -7,6 +7,7 @@ public class Controlador {
 		int peso = vista.Peso();
 		int altura = vista.Altura(); 
 		int edad = vista.Edad();
+		int sexo = vista.Sexo();
         	//Consejos nutricionales
         	while(flag==true){
 			String mensaje="";
@@ -21,7 +22,7 @@ public class Controlador {
 				} else if(opcion2==2){
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
-					mensaje = consejos.Cantidad(p,a,e,s);
+					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==2){
@@ -33,7 +34,7 @@ public class Controlador {
 				} else if(opcion2==2){
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
-					mensaje = consejos.Cantidad(p,a,e,s);
+					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==3){
@@ -45,7 +46,7 @@ public class Controlador {
 				} else if(opcion2==2){
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
-					mensaje = consejos.Cantidad(p,a,e,s);
+					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==4){
@@ -57,7 +58,7 @@ public class Controlador {
 				} else if(opcion2==2){
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
-					mensaje = consejos.Cantidad(p,a,e,s);
+					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==5){
@@ -69,7 +70,7 @@ public class Controlador {
 				} else if(opcion2==2){
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
-					mensaje = consejos.Cantidad(p,a,e,s);
+					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==6){
@@ -81,7 +82,7 @@ public class Controlador {
 				} else if(opcion2==2){
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
-					mensaje = consejos.Cantidad(p,a,e,s);
+					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
 				}
 			vista.Opcion(mensaje);
 			}

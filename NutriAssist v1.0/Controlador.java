@@ -1,12 +1,14 @@
 public class Controlador {
-    Vista vista = null;
-    public static void main(String[] args){
-        Vista vista = new Vista();
-        ConsejosNutricionales consejos = null;
-        vista.menu();
-        
-        //Consejos nutricionales
-        while(flag==true){
+	Vista vista = null;
+	public static void main(String[] args){
+		Vista vista = new Vista();
+		ConsejosNutricionales consejos = null;
+		vista.menu();
+		int peso = vista.Peso();
+		int altura = vista.Altura(); 
+		int edad = vista.Edad();
+        	//Consejos nutricionales
+        	while(flag==true){
 			String mensaje="";
 			int opcionConsejo = vista.PrimerMensaje();
 			int opcion2=0;

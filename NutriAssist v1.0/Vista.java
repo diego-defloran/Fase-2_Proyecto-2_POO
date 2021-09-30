@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class Vista{
 	private Scanner scan;
+	private Scanner scanner = new Scanner(System.in);
 	
 	public Vista(){
 		//Constructor que inicia el scanner
@@ -47,7 +48,89 @@ class Vista{
 	public void Opcion(String mensaje){
 		System.out.println(mensaje);
 	}
-	}
+	
+	 /**
+     *
+     */
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+    public void Patron(){
+        String Patron = "\n      /  \\        /  \\        /  \\        /  \\        /  \\        /  \\\n" +
+"__/        \\__/        \\__/        \\__/        \\__/        \\__/       \n" +
+"  \\        /  \\        /  \\        /  \\        /  \\        /  \\       \n" +
+"     \\__/        \\__/        \\__/        \\__/        \\__/        \\__/";
+        
+        
+       System.out.println(Patron);
+    }
+    
+    /**
+     *
+     */
+    public void CrearUsuario(){
+        Patron();
+        String registrate = "______ _____ _____ _____ _____ ___________  ___ _____ _____  \n" +
+"| ___ \\  ___|  __ \\_   _/  ___|_   _| ___ \\/ _ \\_   _|  ___| \n" +
+"| |_/ / |__ | |  \\/ | | \\ `--.  | | | |_/ / /_\\ \\| | | |__   \n" +
+"|    /|  __|| | __  | |  `--. \\ | | |    /|  _  || | |  __|  \n" +
+"| |\\ \\| |___| |_\\ \\_| |_/\\__/ / | | | |\\ \\| | | || | | |___  \n" +
+"\\_| \\_\\____/ \\____/\\___/\\____/  \\_/ \\_| \\_\\_| |_/\\_/ \\____/  ";
+       System.out.println("\n\n" + registrate);
+        
+    }
+    
+    /**
+     *
+     */
+    public void IngresaNombre(){
+        System.out.println("\n\nINGRESA TU NOMBRE: ");
+    }
+    
+    /**
+     *
+     */
+    public void IngresaApellido(){
+        System.out.println("\nINGRESA TU APELLIDO ");
+    }
+    
+    /**
+     *
+     */
+    public void IngresaNombreUsuario(){
+        System.out.println("\nINGRESA TU NOMBRE DE USUARIO ");
+        
+    }
+
+    /**
+     *
+     */
+    public void IngresaContraseña(){
+        System.out.println("\nINGRESA TU CONTRASEÑA");
+    }
+
+    /**
+     *
+     */
+    public void ConfirmarContraseña(){
+        System.out.println("\nRepitetuContraseña");
+    }
+
+    /**
+     *
+     */
+    public void IngresaCorreo(){
+        System.out.println("\nINGREA TU CORREO");
+    }
+
+    /**
+     *
+     * @return
+     */
+    public String TomarDatos(){
+        String dato = scanner.nextLine();
+        return dato;
+    }
+    }
 
 	
 	

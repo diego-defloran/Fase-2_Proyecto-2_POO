@@ -24,6 +24,7 @@ public class Main {
       
       int opcion = 0;
       while (opcion != 4){
+       vista.Nutri();
        opcion = vista.MenuGeneral();
        if (opcion ==1){
           if(cu.VerificarContraseña()){

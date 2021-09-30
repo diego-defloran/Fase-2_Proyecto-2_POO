@@ -23,6 +23,9 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+				} else if (opcion==4){
+					flag=false;
+					break; 
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==2){
@@ -35,6 +38,9 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+				} else if (opcion==4){
+					flag=false;
+					break; 
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==3){
@@ -47,6 +53,9 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+				} else if (opcion==4){
+					flag=false;
+					break; 
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==4){
@@ -59,6 +68,9 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+				} else if (opcion==4){
+					flag=false;
+					break; 
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==5){
@@ -71,6 +83,9 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+				} else if (opcion==4){
+					flag=false;
+					break; 
 				}
 			vista.Opcion(mensaje);
 			} else if(opcionConsejo==6){
@@ -83,6 +98,9 @@ public class Controlador {
 					mensaje = consejos.Ejemplos();
 				} else if(opcion2==3){
 					mensaje = consejos.Cantidad(peso,altura,edad,sexo);
+				} else if (opcion==4){
+					flag=false;
+					break; 
 				}
 			vista.Opcion(mensaje);
 			}

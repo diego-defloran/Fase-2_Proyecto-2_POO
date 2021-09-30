@@ -45,6 +45,67 @@ class Vista{
 		}
 		return opcion;
 	}
+	
+	public int Peso(){
+		boolean flag = false;
+		int opcion=0;
+		while (flag==false){
+			System.out.println("\nIngrese su peso en libras\n");
+			opcion = scan.nextInt();
+			if (opcion>0){
+				flag=true;
+			} else {
+				System.out.println("OPCION INCORRECTA");
+			}
+		}
+		return opcion;
+	}
+	
+	public int Altura(){
+		boolean flag = false;
+		int opcion=0;
+		while (flag==false){
+			System.out.println("\nIngrese su altura en cm\n");
+			opcion = scan.nextInt();
+			if (opcion>0){
+				flag=true;
+			} else {
+				System.out.println("OPCION INCORRECTA");
+			}
+		}
+		return opcion;
+	}
+	
+	public int Edad(){
+		boolean flag = false;
+		int opcion=0;
+		while (flag==false){
+			System.out.println("\nIngrese su edad\n");
+			opcion = scan.nextInt();
+			if (opcion>0){
+				flag=true;
+			} else {
+				System.out.println("OPCION INCORRECTA");
+			}
+		}
+		return opcion;
+	}
+	
+	public int Sexo(){
+		boolean flag = false;
+		int opcion=0;
+		while (flag==false){
+			System.out.println("\nIngrese su sexo\n"+"1.Femenino\n"+"2.Masculino\n");
+			opcion = scan.nextInt();
+			if (opcion==1 || opcion ==2){
+				flag=true;
+			} else {
+				System.out.println("OPCION INCORRECTA");
+			}
+		}
+		return opcion;
+	}
+	
 	public void Opcion(String mensaje){
 		System.out.println(mensaje);
 	}

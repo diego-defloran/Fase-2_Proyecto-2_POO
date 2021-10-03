@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -18,12 +19,12 @@ import java.util.Scanner;
  * @author Javie
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws InputMismatchException, IOException{
       Vista vista = new Vista();CrearUsuario cu = new CrearUsuario();
       //ConsejosNutricionales consejos = null; Declaración se duplica en línea 44
       
       int opcion = 0;
-      boolean flag;
+      boolean flag = true;
       while (opcion != 4){
        vista.Nutri();
        opcion = vista.MenuGeneral();
@@ -42,7 +43,7 @@ public class Main {
       else if (opcion == 3){
           /// AQUI VA TU PARTE DEL CODIGO
           ConsejosNutricionales consejos = null;
-          vista.menu();
+          //vista.menu();
           int peso = vista.Peso();
           int altura = vista.Altura(); 
           int edad = vista.Edad();

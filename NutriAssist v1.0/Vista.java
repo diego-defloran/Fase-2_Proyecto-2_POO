@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Vista{
+public class Vista {
 	private Scanner scan;
 	private Scanner scanner = new Scanner(System.in);
 	

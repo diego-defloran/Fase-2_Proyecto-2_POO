@@ -1,5 +1,3 @@
-
-
 import com.csvreader.CsvWriter;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -125,7 +123,7 @@ public class CrearUsuario {
         salidaCSV.write("\n");
         for(Usuario user : usuarios){
             salidaCSV.write(user.getNombreUsuario());
-            salidaCSV.write(user.getContraseña());
+            salidaCSV.write(user.getContrasena());
             salidaCSV.write(user.getCorreo());
             salidaCSV.write(user.getNombre());
            

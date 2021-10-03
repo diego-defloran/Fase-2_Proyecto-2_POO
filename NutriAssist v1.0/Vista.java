@@ -14,8 +14,9 @@ class Vista{
 		String OpcionesMenu = "\n\nSeleccione que la opción que le gustaría:\n" + 
 								"1. Ingresar\n"+
 								"2. Registrarte\n"+
-								"3. Consejos\n" + 
-			                                        "4. Salir\n";
+								"3. Consejos\n" +
+								"4. Recursos de interes" +
+			                    "4. Salir";
 		System.out.println(OpcionesMenu);
 	        int opcion = scanner.nextInt();
                 return opcion;
@@ -32,11 +33,6 @@ class Vista{
        System.out.println(nutri);
     }
 		
-		
-			
-	
-	
-	}
 	
 	public int PrimerMensaje(){
 		boolean flag = false;

@@ -20,9 +20,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
       Vista vista = new Vista();CrearUsuario cu = new CrearUsuario();
-      ConsejosNutricionales consejos = null;
+      //ConsejosNutricionales consejos = null; Declaración se duplica en línea 44
       
       int opcion = 0;
+      boolean flag;
       while (opcion != 4){
        vista.Nutri();
        opcion = vista.MenuGeneral();
@@ -144,6 +145,13 @@ public class Main {
 			}
 		}
     } else if (opcion==4){
+        Recursos_interes r = new Recursos_interes();
+        r.RecursosDeInteres();
+      }
+
+      else if (opcion ==5){
+          System.out.println("Gracias por utilizar NutriAssist. Vuelva pronto!");
+          System.exit(0);
       }
       
        

@@ -10,7 +10,7 @@ class Azucares extends ConsejosNutricionales{
 	}
 	
 	
-	//Método Beneficios en el que se utiliza overloading
+	//Método Beneficios en el que se utiliza overloading, retorna un String con la info
 	public String Beneficios(){
 		mensaje = ("BENEFICIOS DE CONSUMIR "+nombre);
 		mensaje =( mensaje+"Aporte de energia\n" +
@@ -21,7 +21,7 @@ class Azucares extends ConsejosNutricionales{
 	}
 	
 	
-	//Método Beneficios en el que se utiliza overloading, se llaman a las clases privadas: Sacarosa, Fructosa, Lactosa y Almidon
+	//Método Beneficios en el que se utiliza overloading, se llaman a las clases privadas: Sacarosa, Fructosa, Lactosa y Almidon. Retorna un String con la info
 	public String Ejemplos(){
 		mensaje = ("ALGUNOS EJEMPLOS DE "+nombre);
 		mensaje = mensaje+Sacarosa();

@@ -1,3 +1,6 @@
+//@author Elena Rodriguez
+//Ultima modificación: 29/09/2021
+//Clase hija Carbohidratos que hereda de clase madre ConsejosNutricionales
 
 class Carbohidratos extends ConsejosNutricionales{
 	String mensaje;
@@ -7,6 +10,7 @@ class Carbohidratos extends ConsejosNutricionales{
 	}
 	
 	public String Beneficios(){
+	//Método Beneficios en el que se utiliza overloading
 		mensaje = ("BENEFICIOS DE CONSUMIR "+nombre);
 		mensaje =( mensaje+"\nPrincipal fuente de energia\n" +
 			"2. Fuente de fibra\n"+
@@ -16,6 +20,7 @@ class Carbohidratos extends ConsejosNutricionales{
 	}
 	
 	public String Ejemplos(){
+	//Método Beneficios en el que se utiliza overloading
 		mensaje = ("ALGUNOS EJEMPLOS DE "+nombre);
 		mensaje = mensaje+("1.Hortalizas y frutas\n" +
 						"2. Cereales, pan, pasta y arroz\n"+
@@ -27,6 +32,8 @@ class Carbohidratos extends ConsejosNutricionales{
 
 	
 	public String Cantidad(int peso, int altura, int edad, int sexo){
+	//Método Cantidad, se utiliza overloading, retorna un string con la cantidad 
+	//Se reciben como parámetros los datos del usuario, se llama al método de la clase madre Calorías y se utiliza para el cálculo en gramos de los carbohidratos
 		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
 		double calorias = Calorias(peso, altura, edad, sexo);
 		double cal = (((calorias*0.133)*100)/200);

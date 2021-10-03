@@ -15,7 +15,7 @@ public class Vista {
 								"1. Ingresar\n"+
 								"2. Registrarte\n"+
 								"3. Consejos\n" +
-								"4. Recursos de interes" +
+								"4. Recursos de interes\n" +
 			                    "5. Salir";
 		System.out.println(OpcionesMenu);
 	        int opcion = scanner.nextInt();

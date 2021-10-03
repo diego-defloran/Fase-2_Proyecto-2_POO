@@ -1,4 +1,6 @@
 //@author Elena Rodriguez
+//Ultima modificación: 29/09/2021
+//Clase hija Agua que hereda de clase madre ConsejosNutricionales
 class Agua extends ConsejosNutricionales{
 	String mensaje;
 	//Constructor
@@ -7,6 +9,7 @@ class Agua extends ConsejosNutricionales{
 	}
 	
 	public String Beneficios(){
+		//Método Beneficios se implementa overloading
 		mensaje = ("BENEFICIOS DE CONSUMIR "+nombre);
 		mensaje = mensaje+" \nLos beneficios de tomar agua\n" +
 			"1.Alivia la fatiga\n" +
@@ -18,12 +21,14 @@ class Agua extends ConsejosNutricionales{
 	}
 	
 	public String Ejemplos(){
+		//Método Ejemplos se implementa overloading
 		mensaje = ("ALGUNOS EJEMPLOS DE "+nombre);
 		mensaje = (mensaje+" \nTambien puedes tomar infusiones o aguas saborizadas, claro, sin azucar\n");
 		return mensaje;
 	}
 	
 	public String Cantidad(int peso, int altura, int edad, int sexo){
+		//Método Cantidad se implementa overloading
 		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
 		int agua = peso/16;
 		mensaje = ("\nUsted debe tomar "+agua+" vasos de agua al dia\n");

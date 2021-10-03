@@ -1,3 +1,6 @@
+//@author Elena Rodriguez
+//Ultima modificación: 29/09/2021
+//Clase hija Grasas que hereda de clase madre ConsejosNutricionales
 
 class Grasas extends ConsejosNutricionales{
 	String mensaje;
@@ -7,6 +10,7 @@ class Grasas extends ConsejosNutricionales{
 	}
 	
 	public String Beneficios(){
+	//Método Beneficios en el que se utiliza overloading, retorna un String con la info
 		mensaje = ("BENEFICIOS DE CONSUMIR "+nombre);
 		mensaje = mensaje+"\n1.Protegen los organos vitales\n" +
 			"2. Proporcionan energia\n"+
@@ -17,6 +21,7 @@ class Grasas extends ConsejosNutricionales{
 	}
 	
 	public String Ejemplos(){
+	//Método Beneficios en el que se utiliza overloading, se llaman a las clases privadas: grasasSaturadas, grasasInsaturadas
 		mensaje = ("ALGUNOS EJEMPLOS DE "+nombre);
 		mensaje = mensaje+grasasSaturadas();
 		mensaje = mensaje+grasasInsaturadas();
@@ -24,6 +29,7 @@ class Grasas extends ConsejosNutricionales{
 	}
 	
 	private String grasasSaturadas(){
+	//Método privado que retorna un string con ejemplos específicos
 		String grasas = ("\nGrasas saturadas\n"+
 						"Solidas a temperatura ambiente, debes consumir con moderacion\n"+
 						"1.Manteca\n" +
@@ -35,6 +41,7 @@ class Grasas extends ConsejosNutricionales{
 	}
 	
 	private String grasasInsaturadas(){
+	//Método privado que retorna un string con ejemplos específicos
 		String grasas = ("\nGrasas Insaturadas\n"+
 						"Prefiere las grasas Insaturadas\n"+
 						"1.Aceite de oliva\n" +
@@ -46,6 +53,8 @@ class Grasas extends ConsejosNutricionales{
 	}
 	
 	public String Cantidad(int peso, int altura, int edad, int sexo){
+	//Método Cantidad, se utiliza overloading, retorna un string con la cantidad 
+	//Se reciben como parámetros los datos del usuario, se llama al método de la clase madre Calorías y se utiliza para el cálculo en gramos de las grasas
 		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
 		double calorias = Calorias(peso, altura, edad, sexo);
 		double cal = ((calorias*0.25)/9);

@@ -15,8 +15,8 @@ class Azucares extends ConsejosNutricionales{
 		mensaje = ("BENEFICIOS DE CONSUMIR "+nombre);
 		mensaje =( mensaje+"Aporte de energia\n" +
 			"2. Desarrollo de los tejidos\n"+
-			"3. Permite reponer los depositos de glucogeno"+
-			"4. Nutre el sistema nervioso");
+			"3. Permite reponer los depositos de glucogeno\n"+
+			"4. Nutre el sistema nervioso\n");
 		return mensaje;
 	}
 	
@@ -41,7 +41,7 @@ class Azucares extends ConsejosNutricionales{
 						"2. Azucar mascarbado\n"+
 						"3. Azucar blanca\n"+
 						"4. Frutas\n"+
-						"Todos los productos que las contengan");
+						"Todos los productos que las contengan\n");
 		return sacarosa;
 	}
 	

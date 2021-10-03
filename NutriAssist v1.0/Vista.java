@@ -16,7 +16,7 @@ class Vista{
 								"2. Registrarte\n"+
 								"3. Consejos\n" +
 								"4. Recursos de interes" +
-			                    "4. Salir";
+			                    "5. Salir";
 		System.out.println(OpcionesMenu);
 	        int opcion = scanner.nextInt();
                 return opcion;
@@ -189,14 +189,14 @@ class Vista{
     /**
      *
      */
-    public void IngresaContraseña(){
+    public void IngresaContrasena(){
         System.out.println("\nINGRESA TU CONTRASEÑA");
     }
 
     /**
      *
      */
-    public void ConfirmarContraseña(){
+    public void ConfirmarContrasena(){
         System.out.println("\nRepitetuContraseña");
     }
 

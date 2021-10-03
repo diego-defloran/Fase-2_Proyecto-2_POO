@@ -28,7 +28,7 @@ public class Main {
        vista.Nutri();
        opcion = vista.MenuGeneral();
        if (opcion ==1){
-          if(cu.VerificarContraseña()){
+          if(cu.VerificarContrasena()){
            System.out.println("ACCESO");
        }
        else{

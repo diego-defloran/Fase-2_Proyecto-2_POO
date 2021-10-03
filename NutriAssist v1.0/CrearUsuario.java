@@ -1,4 +1,5 @@
-import com.csvreader.CsvWriter;
+
+//import com.csvreader.CsvWriter; 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -35,11 +36,12 @@ public class CrearUsuario {
      *
      * @return
      */
-    public boolean VerificarContraseña(){
+    public boolean VerificarContrasena(){
         boolean acceso = false;
+        
         vista.IngresaNombreUsuario();
         String nUsuario = vista.TomarDatos();
-        vista.IngresaContraseña();
+        vista.IngresaContrasena();
         String contra = vista.TomarDatos();
          
          
@@ -89,11 +91,11 @@ public class CrearUsuario {
          String apellido = vista.TomarDatos();
          vista.IngresaNombreUsuario();
          String nombreUsuario = vista.TomarDatos();
-         vista.IngresaContraseña();
-         String contraseña = vista.TomarDatos();
+         vista.IngresaContrasena();
+         String contrasena = vista.TomarDatos();
          vista.IngresaCorreo();
          String correo = vista.TomarDatos();
-         Usuario usuario = new Usuario(nombreUsuario, contraseña, correo, nombre);
+         Usuario usuario = new Usuario(nombreUsuario, contrasena, correo, nombre);
          usuarios.add(usuario);
          /// SE GUARDA LA INFORMACION EN UN CSV
          

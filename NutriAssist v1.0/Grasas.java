@@ -14,9 +14,9 @@ class Grasas extends ConsejosNutricionales{
 		mensaje = ("BENEFICIOS DE CONSUMIR "+nombre);
 		mensaje = mensaje+"\n1.Protegen los organos vitales\n" +
 			"2. Proporcionan energia\n"+
-			"3. Absorben vitaminas"+
-			"4. Regulan la temperatura temporal"+
-			"\nOJO, CON MODERACION";
+			"3. Absorben vitaminas\n"+
+			"4. Regulan la temperatura temporal\n"+
+			"\nOJO, CON MODERACION\n";
 		return mensaje;
 	}
 	

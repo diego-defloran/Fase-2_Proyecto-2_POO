@@ -58,10 +58,10 @@ public class Recursos_interes{
                     d.browse(a);
                     RecursosDeInteres();
                 }
-                /*else if (opcion == 6){
+                else if (opcion == 6){
                     Vista vista = new Vista();
                     vista.MenuGeneral();
-                }*/
+                }
                 else if (opcion > 6 || opcion <= 0 ){
                     RecursosDeInteres();
                 }

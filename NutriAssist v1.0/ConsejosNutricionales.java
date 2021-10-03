@@ -1,38 +1,46 @@
+//@author Elena Rodriguez
+//Ultima modificación: 29/09/2021
+//Clase madre ConsejosNutricionales, de ella heredan las clases de Agua, Carnes, Carbohidratos, FrutasVerduras, Azucares y Grasas
 
 class ConsejosNutricionales{
 	protected String nombre;
 	protected String mensaje;
-	protected String pesoUsuario;
 	protected int cantidad;
 	
 	public ConsejosNutricionales(String nom){
+	//Constructor, recibe como parámetro el nombre del tipo de alimento
 		nombre = nom;
 	}
 	
 	public String Bienvenida(){
+	//Método que contiene el menú de consejos nutricionales, retorna el string con el menú 
 		mensaje = "Bienvenido al segmento de consejos nutricionales\n"+
 					"Seleccione la opcion que desea\n"+
-					"1.Beneficios de consumir "+nombre+"\n"+
+					"1. Beneficios de consumir "+nombre+"\n"+
 					"2. Ejemplos de "+nombre+"\n"+
 					"3. Cuanto debo consumir de "+nombre+"\n"+
 					"4. Salir\n";
 		return mensaje;
 	}
 	public String Beneficios(){
+	//Metodo de beneficios, se utiliza para poder realizar overloading en las clases hijas
 		mensaje = ("----BENEFICIOS DE CONSUMIR "+nombre+"----");
 		return mensaje;
 	}
 	
-	public String Ejemplos(){
+	public String Ejemplos(){	
+	//Metodo de beneficios, se utiliza para poder realizar overloading en las clases hijas
 		mensaje = ("ALGUNOS EJEMPLOS DE "+nombre);
 		return mensaje;
 	}
 	
 	public String Cantidad(int peso, int altura, int edad, int sexo){
+	//Metodo de beneficios, se utiliza para poder realizar overloading en las clases hijas
 		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
 		return mensaje;
 	}
 	public double Calorias(int peso, int altura, int edad, int sexo){
+	//Método de la clase madre que calcula las calorías para cada usuario según su peso, altura, edad y sexo. Devuelve el número de calorías. Se llama desde las clases hijas por eso es público
 		double calorias =0;
 		if(sexo==1){
 			//Femenino

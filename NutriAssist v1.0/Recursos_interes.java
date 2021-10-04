@@ -19,16 +19,16 @@ public class Recursos_interes{
     //private URI a;
 	private String a;
     Scanner scan = new Scanner(System.in);
-    private String encabezado = "╭━━━┳━━━┳━━━┳╮╱╭┳━━━┳━━━┳━━━┳━━━╮╭━━━┳━━━╮╭━━┳━╮╱╭┳━━━━┳━━━┳━━━┳━━━┳━━━╮\n" +
+    /*private String encabezado = "╭━━━┳━━━┳━━━┳╮╱╭┳━━━┳━━━┳━━━┳━━━╮╭━━━┳━━━╮╭━━┳━╮╱╭┳━━━━┳━━━┳━━━┳━━━┳━━━╮\n" +
     "┃╭━╮┃╭━━┫╭━╮┃┃╱┃┃╭━╮┃╭━╮┃╭━╮┃╭━╮┃╰╮╭╮┃╭━━╯╰┫┣┫┃╰╮┃┃╭╮╭╮┃╭━━┫╭━╮┃╭━━┫╭━╮┃\n" +
     "┃╰━╯┃╰━━┫┃╱╰┫┃╱┃┃╰━╯┃╰━━┫┃╱┃┃╰━━╮╱┃┃┃┃╰━━╮╱┃┃┃╭╮╰╯┣╯┃┃╰┫╰━━┫╰━╯┃╰━━┫╰━━╮\n" + 
     "┃╭╮╭┫╭━━┫┃╱╭┫┃╱┃┃╭╮╭┻━━╮┃┃╱┃┣━━╮┃╱┃┃┃┃╭━━╯╱┃┃┃┃╰╮┃┃╱┃┃╱┃╭━━┫╭╮╭┫╭━━┻━━╮┃\n" + 
     "┃┃┃╰┫╰━━┫╰━╯┃╰━╯┃┃┃╰┫╰━╯┃╰━╯┃╰━╯┃╭╯╰╯┃╰━━╮╭┫┣┫┃╱┃┃┃╱┃┃╱┃╰━━┫┃┃╰┫╰━━┫╰━╯┃\n" +
-    "╰╯╰━┻━━━┻━━━┻━━━┻╯╰━┻━━━┻━━━┻━━━╯╰━━━┻━━━╯╰━━┻╯╱╰━╯╱╰╯╱╰━━━┻╯╰━┻━━━┻━━━╯";
+    "╰╯╰━┻━━━┻━━━┻━━━┻╯╰━┻━━━┻━━━┻━━━╯╰━━━┻━━━╯╰━━┻╯╱╰━╯╱╰╯╱╰━━━┻╯╰━┻━━━┻━━━╯";*/
 
 
-    public void RecursosDeInteres() //throws IOException, InputMismatchException{
-        System.out.println(encabezado);
+    public void RecursosDeInteres() /*throws IOException, InputMismatchException*/{
+        //System.out.println(encabezado);
         System.out.println("A continuacion tendra a su disposicion una seria de paginas web relacionas con temas relevantes en materai de nutricion y salud.\n Cual desea visitar? Por favor copiar URL");
         System.out.println("1. Organizacion Panamericana de la Salud\n2. Organizaciones de las Naciones Unidas: Problemas Globales - Alimentos\n3. Organizacion de las Naciones Unidas: ODS No. 03 Salud y Bienestar\n4. Nutri Activa UVG\n5. Texas Heart Institute\n6. Salir");
         //d = Desktop.getDesktop();
@@ -78,7 +78,7 @@ public class Recursos_interes{
                 }
 
         } 
-        catch (InputMismatchException | URISyntaxException t) {
+        catch (InputMismatchException t) {
             System.out.println("Uppp! Ha ocurrido un error");
             RecursosDeInteres();
         }

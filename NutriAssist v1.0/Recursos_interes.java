@@ -36,35 +36,35 @@ public class Recursos_interes{
             opcion = scan.nextInt();
                 if (opcion == 1){
                     //this.a = new URI("https://www.paho.org/es/temas/nutricion");
-					this.a = ("https://www.paho.org/es/temas/nutricion");
+					this.a = "https://www.paho.org/es/temas/nutricion";
 					System.out.println(a);
                     //d.browse(a);
                     RecursosDeInteres();
                 }
                 else if (opcion == 2){
                     //this.a = new URI("https://www.un.org/es/global-issues/food");
-					this.a = ("https://www.un.org/es/global-issues/food");
+					this.a = "https://www.un.org/es/global-issues/food";
 					System.out.println(a);
                     //d.browse(a);
                     RecursosDeInteres();
                 }
                 else if (opcion == 3){
                     //this.a = new URI("https://www.un.org/sustainabledevelopment/es/health/");
-					this.a = ("https://www.un.org/sustainabledevelopment/es/health/");
+					this.a = "https://www.un.org/sustainabledevelopment/es/health/";
 					System.out.println(a);
                     //d.browse(a);
                     RecursosDeInteres();
                 }
                 else if (opcion == 4){
                     //this.a = new URI("https://www.uvg.edu.gt/servicios/nutriactiva/");
-                    this.a = ("https://www.uvg.edu.gt/servicios/nutriactiva/")
+                    this.a = "https://www.uvg.edu.gt/servicios/nutriactiva/";
 					System.out.println(a);
 					//d.browse(a);
                     RecursosDeInteres();
                 }
                 else if (opcion == 5){
                     //this.a = new URI("https://www.texasheart.org/heart-health/heart-information-center/topics/nutricion/"); 
-					this.a = ("https://www.texasheart.org/heart-health/heart-information-center/topics/nutricion/");
+					this.a = "https://www.texasheart.org/heart-health/heart-information-center/topics/nutricion/";
                     System.out.println(a);
 					//d.browse(a);
                     RecursosDeInteres();

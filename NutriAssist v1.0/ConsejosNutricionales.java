@@ -2,6 +2,7 @@
 //Ultima modificación: 29/09/2021
 //Clase madre ConsejosNutricionales, de ella heredan las clases de Agua, Carnes, Carbohidratos, FrutasVerduras, Azucares y Grasas
 
+//Se modificó ConsejosNutricionales a una clase abstracta
 abstract class ConsejosNutricionales{
 	protected String nombre;
 	protected String mensaje;
@@ -23,10 +24,13 @@ abstract class ConsejosNutricionales{
 		return mensaje;
 	}
 	public abstract String Beneficios();
+	//Se modificó a un método abstracto
 	
 	public abstract String Ejemplos();
+	//Se modificó a un método abstracto
 	
 	public abstract String Cantidad(int peso, int altura, int edad, int sexo);
+	//Se modificó a un método abstracto
 	
 	public double Calorias(int peso, int altura, int edad, int sexo){
 	//Método de la clase madre que calcula las calorías para cada usuario según su peso, altura, edad y sexo. Devuelve el número de calorías. Se llama desde las clases hijas por eso es público

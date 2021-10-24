@@ -16,7 +16,8 @@ public class Vista {
 								"2. Registrarte\n"+
 								"3. Consejos\n" +
 								"4. Recursos de interes\n" +
-			                    "5. Salir";
+			                    "5. Mostrar Info Nutricional personal\n" +
+			                    "6. Salir";
 		System.out.println(OpcionesMenu);
 	        int opcion = scanner.nextInt();
                 return opcion;
@@ -206,6 +207,57 @@ public class Vista {
     public void IngresaCorreo(){
         System.out.println("\nINGRESA TU CORREO");
     }
+	
+    /**
+     *
+     */
+    public void IngresaNombreUsuario(){
+        System.out.println("\nINGRESA TU NOMBRE DE USUARIO ");
+        
+    }
+
+    /**
+     *
+     */
+    public void IngresaContrasena(){
+        System.out.println("\nINGRESA TU CONTRASEÑA");
+    }
+
+    /**
+     *
+     */
+    public void ConfirmarContrasena(){
+        System.out.println("\nRepitetuContraseña");
+    }
+
+    /**
+     *
+     */
+    public void IngresaCorreo(){
+        System.out.println("\nINGRESA TU CORREO");
+    }
+
+	/**
+     *
+     */
+    public void IngresaPeso(){
+        System.out.println("\nINGRESA TU PESO EN LB ");
+
+    }
+
+	/**
+     *
+     */
+    public void IngresaConsumoAgua(){
+        System.out.println("\nINGRESA LOS LT DE AGUA CONSUMIDOS AL DIA ");
+    }
+	/**
+     *
+     */
+    public void IngresaEjercicio(){
+      System.out.println("\nINGRESA LAS HORAS DE EJERICICO AL DIA");
+
+	}
 
     /**
      *

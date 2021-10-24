@@ -7,7 +7,7 @@
  * @author Javie
  */
 public class Usuario {
-    private String nombreUsuario, contrasena, correo, nombre, apellido;
+    private String nombreUsuario, contrasena, correo, nombre, apellido, peso, agua, ejercicio;
 
     /**
      *
@@ -16,11 +16,14 @@ public class Usuario {
      * @param correo
      * @param nombre
      */
-    public Usuario(String nombreusuario, String contrasena, String correo, String nombre){
+    public Usuario(String nombreusuario, String contrasena, String correo, String nombre, String peso, String agua, String ejercicio){
         this.nombreUsuario = nombreusuario;
         this.contrasena = contrasena;
         this.correo = correo;
         this.nombre = nombre;
+        this.peso = peso;
+        this.agua = agua;
+        this.ejercicio = ejercicio;
        
     }
 
@@ -63,6 +66,32 @@ public class Usuario {
     public String getApellido() {
         return apellido;
     }
+
+    /**
+     *
+     * @return
+     */
+    public String getPeso() {
+        return peso;
+    }
+
+     /**
+     *
+     * @return
+     */
+    public String getAgua() {
+        return agua;
+    }
+
+     /**
+     *
+     * @return
+     */
+    public String getEjercicio() {
+        return ejercicio;
+    }
+
+
 
     /**
      *

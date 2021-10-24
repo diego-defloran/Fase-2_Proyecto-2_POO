@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "NutriAssist v1.0/javacsv.jar",
+        "NutriAssist v1.0/jfreechart-1.5.3.jar"
+    ]
+}

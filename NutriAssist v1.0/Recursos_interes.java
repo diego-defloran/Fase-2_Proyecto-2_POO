@@ -30,32 +30,32 @@ public class Recursos_interes{
         System.out.println(encabezado);
         System.out.println("A continuacion tendra a su disposicion una seria de paginas web relacionas con temas relevantes en materai de nutricion y salud.\n Cual desea visitar? Por favor copiar URL");
         System.out.println("1. Organizacion Panamericana de la Salud\n2. Organizaciones de las Naciones Unidas: Problemas Globales - Alimentos\n3. Organizacion de las Naciones Unidas: ODS No. 03 Salud y Bienestar\n4. Nutri Activa UVG\n5. Texas Heart Institute\n6. Salir");
-        d = Desktop.getDesktop();//Se obtiene el ESCRITORIO del disposito del usuario para poder hacer el despligue de los URL a través del navegador predeterminado
+        d = Desktop.getDesktop();
         try {
 		opcion = scan.nextInt();
 			if (opcion == 1){
 				this.a = new URI("https://www.paho.org/es/temas/nutricion");
-				d.browse(a);//Instrucción para desplegar el sitio web
+				d.browse(a);
 				RecursosDeInteres();
 			}
 			else if (opcion == 2){
 				this.a = new URI("https://www.un.org/es/global-issues/food");
-				d.browse(a);//Instrucción para desplegar el sitio web
+				d.browse(a);
 				RecursosDeInteres();
 			}
 			else if (opcion == 3){
 				this.a = new URI("https://www.un.org/sustainabledevelopment/es/health/");
-				d.browse(a);//Instrucción para desplegar el sitio web
+				d.browse(a);
 				RecursosDeInteres();
 			}
 			else if (opcion == 4){
 				this.a = new URI("https://www.uvg.edu.gt/servicios/nutriactiva/");
-				d.browse(a);//Instrucción para desplegar el sitio web
+				d.browse(a);
 				RecursosDeInteres();
 			}
 			else if (opcion == 5){
 				this.a = new URI("https://www.texasheart.org/heart-health/heart-information-center/topics/nutricion/"); 
-				d.browse(a);//Instrucción para desplegar el sitio web
+				d.browse(a);
 				RecursosDeInteres();
 			}
 			else if (opcion == 6){

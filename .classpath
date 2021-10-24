@@ -7,5 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="NutriAssist v1.0"/>
 	<classpathentry kind="lib" path="C:/Users/Diego De Florán/Desktop/Fase-2_Proyecto-2_POO/NutriAssist v1.0/javacsv.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego De Florán/Desktop/Fase-2_Proyecto-2_POO/NutriAssist v1.0/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Diego De Florán/Desktop/Fase-2_Proyecto-2_POO/NutriAssist v1.0/jfreechart-1.0.14.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

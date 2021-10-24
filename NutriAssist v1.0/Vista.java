@@ -17,7 +17,8 @@ public class Vista {
 								"3. Consejos\n" +
 								"4. Recursos de interes\n" +
 			                    "5. Mostrar Info Nutricional personal\n" +
-			                    "6. Salir";
+								"6. Seguimiento de h�bitos (BETA)\n" +
+			                    "7. Salir";
 		System.out.println(OpcionesMenu);
 	        int opcion = scanner.nextInt();
                 return opcion;
@@ -211,31 +212,31 @@ public class Vista {
     /**
      *
      */
-    public void IngresaNombreUsuario(){
+    /*public void IngresaNombreUsuario(){
         System.out.println("\nINGRESA TU NOMBRE DE USUARIO ");
         
-    }
+    }*/
 
     /**
      *
      */
-    public void IngresaContrasena(){
+    /*public void IngresaContrasena(){
         System.out.println("\nINGRESA TU CONTRASEÑA");
-    }
+    }*/
 
     /**
      *
      */
-    public void ConfirmarContrasena(){
+    /*public void ConfirmarContrasena(){
         System.out.println("\nRepitetuContraseña");
-    }
+    }*/
 
     /**
      *
      */
-    public void IngresaCorreo(){
+    /*public void IngresaCorreo(){
         System.out.println("\nINGRESA TU CORREO");
-    }
+    }*/
 
 	/**
      *

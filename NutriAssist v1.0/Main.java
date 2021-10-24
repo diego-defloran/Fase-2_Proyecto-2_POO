@@ -152,8 +152,8 @@ public class Main {
 		}
 		}
     } else if (opcion==4){
-        Recursos_interes r = new Recursos_interes();
-        r.RecursosDeInteres();
+        Recursos_interes r = new Recursos_interes();//Llamado al constructor de clase Recursos_interes
+        r.RecursosDeInteres();//Emplear metodo RecursosDeInteres
       }
 
       else if(opcion == 5){
@@ -167,8 +167,15 @@ public class Main {
               System.out.println("\nPUEDES HACERLO DESDE EL MENU PRINCIPAL");
           }
       } 
+      
+      else if (opcion ==6) {
+    	  new Seguimiento();//Llamado a constructor de Seguimiento para la generecion de graficas en beta
+    	  System.out.println("Este apartado es una beta. Si desea colaborar con su opinión con respecto a esta funcionabilidad envie un\ncorreo a NutriAssist@gmail.com\nSu opinion nos interesa!");
+    	  vista.MenuGeneral();
+    	  
+      }
 
-      else if (opcion ==6){
+      else if (opcion ==7){
           System.out.println("Gracias por utilizar NutriAssist. Vuelva pronto!");
           System.exit(0);
       }

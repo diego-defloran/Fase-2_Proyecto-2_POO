@@ -2,7 +2,6 @@
  * 
  * @author Diego
  * @version 1.1
- * @
  */
 /*NOTA: La clase Recursos_interes se tuvo que modificar para evitar problemas al compilar. El error del código original gira entorno al UTF-8. Revisar y modificar para segunda entrega*/
 
@@ -18,11 +17,11 @@ public class Recursos_interes{
     private Desktop d;
     private URI a;
     Scanner scan = new Scanner(System.in);
-    private String encabezado = "######    ####     ####    ##  ##   ######    #####    ####     #####" + 
-  "##  ##  ##  ##   ##  ##   ##  ##    ##  ##  ##       ##  ##   ##" +
-  "##      ######   ##       ##  ##    ##       #####   ##  ##    #####" +
-  "##      ##       ##  ##   ##  ##    ##           ##  ##  ##        ##" +
- "####      #####    ####     ######  ####     ######    ####    ######";
+    private String encabezado = "######    ####     ####    ##  ##   ######    #####    ####     #####\n" + 
+  "##  ##  ##  ##   ##  ##   ##  ##    ##  ##  ##       ##  ##   ##\n" +
+  "##      ######   ##       ##  ##    ##       #####   ##  ##    #####\n" +
+  "##      ##       ##  ##   ##  ##    ##           ##  ##  ##        ##\n" +
+ "####      #####    ####     ######  ####     ######    ####    ######\n";
 
 
 

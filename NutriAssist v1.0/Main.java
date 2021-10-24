@@ -12,23 +12,26 @@ import java.util.Scanner;
 /**
  *
  * @author Dulce Gonzales, Diego DeFloran, Elena Rodriguez, Javier Rucal 
- */
+ */ 
 public class Main {
     public static void main(String[] args) throws InputMismatchException, IOException{
       Vista vista = new Vista();CrearUsuario cu = new CrearUsuario();
       //ConsejosNutricionales consejos = null; Declaración se duplica en línea 44
       
       int opcion = 0;
+      boolean Acceso = false;
       boolean flag = true;
       while (opcion != 4){
        vista.Nutri();
        opcion = vista.MenuGeneral();
        if (opcion ==1){
           if(cu.VerificarContrasena()){
-           System.out.println("ACCESO");
+           System.out.println("ACCESO CONCEDIDO");
+           Acceso = true;
        }
        else{
          System.out.println("ACCESO DENEGADO");  
+         Acceso = false;
        }
           
       }
@@ -153,7 +156,19 @@ public class Main {
         r.RecursosDeInteres();
       }
 
-      else if (opcion ==5){
+      else if(opcion == 5){
+          if (Acceso){
+              System.out.println("\nINFO NOTRICIONAL DEL USUARIO: " + cu.getNombreUsuarioActual());
+              cu.Datos();
+          }
+
+          else{
+              System.out.println("\nDEBES INGRESAR EN TU CUENTA PARA VER LA INFORMACION NUTRICIONAL :(");
+              System.out.println("\nPUEDES HACERLO DESDE EL MENU PRINCIPAL");
+          }
+      } 
+
+      else if (opcion ==6){
           System.out.println("Gracias por utilizar NutriAssist. Vuelva pronto!");
           System.exit(0);
       }

@@ -1,2 +1,2 @@
-Para nuestro proyecto se usó la librería externa JavaCSV. El archivo .jar de la misma se encuentra dentro de la carpeta. 
-Favor de compilarla junto con el programa. Gracias por la consideración. :))
+Para nuestro proyecto se usó la librería externa javacsv, jcommon-1.0.17, jfreechart-1.0.14 . Los archivos .jar de las mismas 
+se encuentra dentro de la carpeta. Favor de compilarla junto con el programa. Gracias por la consideración. :))

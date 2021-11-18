@@ -3,7 +3,7 @@
 //Clase madre ConsejosNutricionales, de ella heredan las clases de Agua, Carnes, Carbohidratos, FrutasVerduras, Azucares y Grasas
 
 //Se modificó ConsejosNutricionales a una clase abstracta
-abstract class ConsejosNutricionales{
+abstract class ConsejosNutricionales implements FuncionalidadesConsejos{
 	protected String nombre;
 	protected String mensaje;
 	protected int cantidad;

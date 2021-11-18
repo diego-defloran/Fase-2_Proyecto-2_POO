@@ -11,18 +11,30 @@ public class Vista {
 	}
 	
 	public int MenuGeneral(){
-		String OpcionesMenu = "\n\nSeleccione que la opción que le gustaría:\n" + 
-								"1. Ingresar\n"+
-								"2. Registrarte\n"+
-								"3. Consejos\n" +
-								"4. Recursos de interes\n" +
-			                    "5. Mostrar Info Nutricional personal\n" +
-								"6. Seguimiento de h�bitos (BETA)\n" +
-			                    "7. Salir";
-		System.out.println(OpcionesMenu);
-	        int opcion = scanner.nextInt();
-                return opcion;
-    }
+		/** 
+		*Método MenuGeneral que le presenta las primeras opciones al usuario 
+		*@return opcion int con el numero de la opcion
+		*/
+		boolean flag = false;
+		int opcion=0;
+		while (flag==false){
+			try{
+				System.out.println("\n\nSeleccione que la opciÃ³n que le gustarÃ­a:\n" + "1. Ingresar\n"+"2. Registrarte\n"+"3. Consejos\n" +"4. Recursos de interes\n" +"5. Mostrar Info Nutricional personal\n" +"6. Seguimiento de hábitos (BETA)\n" + "7. Salir");
+				opcion = scan.nextInt();
+			} catch (InputMismatchException ex){
+				System.out.println("Debe ingresar un numero entero");
+				scan.next();
+				continue;
+			}
+			if (opcion==1 || opcion==2 || opcion==3|| opcion==4 || opcion==5 || opcion==6 || opcion==7){
+				flag=true;
+			} else {
+				System.out.println("OPCION INCORRECTA");
+			}
+		}
+		return opcion;
+	}
+	
 	
 	
     public void Nutri(){
@@ -192,14 +204,14 @@ public class Vista {
      *
      */
     public void IngresaContrasena(){
-        System.out.println("\nINGRESA TU CONTRASEÑA");
+        System.out.println("\nINGRESA TU CONTRASEÃ‘A");
     }
 
     /**
      *
      */
     public void ConfirmarContrasena(){
-        System.out.println("\nRepitetuContraseña");
+        System.out.println("\nRepitetuContraseÃ±a");
     }
 
     /**
@@ -221,14 +233,14 @@ public class Vista {
      *
      */
     /*public void IngresaContrasena(){
-        System.out.println("\nINGRESA TU CONTRASEÑA");
+        System.out.println("\nINGRESA TU CONTRASEÃ‘A");
     }*/
 
     /**
      *
      */
     /*public void ConfirmarContrasena(){
-        System.out.println("\nRepitetuContraseña");
+        System.out.println("\nRepitetuContraseÃ±a");
     }*/
 
     /**

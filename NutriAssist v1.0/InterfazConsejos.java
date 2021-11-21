@@ -1,4 +1,4 @@
-package Nutri;
+
 
 /**
  *
@@ -331,7 +331,7 @@ public class InterfazConsejos extends javax.swing.JFrame {
   
 
 
-    // Declaración de variables
+    // DeclaraciÃ³n de variables
     private javax.swing.JButton Agua1;
     private javax.swing.JTextField Altura1;
     private javax.swing.JButton Azucares1;

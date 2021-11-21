@@ -28,7 +28,7 @@ public class Recursos_interes{
     public void RecursosDeInteres() throws IOException, InputMismatchException{
         System.out.println(encabezado);
         System.out.println("A continuacion tendra a su disposicion una seria de paginas web relacionas con temas relevantes en materai de nutricion y salud.\n Cual desea visitar? Por favor copiar URL");
-        System.out.println("1. Organizacion Panamericana de la Salud\n2. Organizaciones de las Naciones Unidas: Problemas Globales - Alimentos\n3. Organizacion de las Naciones Unidas: ODS No. 03 Salud y Bienestar\n4. Nutri Activa UVG\n5. Texas Heart Institute\n6. Salir");
+        System.out.println("1. Organizacion Panamericana de la Salud\n2. Organizaciones de las Naciones Unidas: Problemas Globales - Alimentos\n3. Organizacion de las Naciones Unidas: ODS No. 03 Salud y Bienestar\n4. Nutri Activa UVG\n5. Texas Heart Institute\n" + "6. Salir");
         d = Desktop.getDesktop();
         try {
 		opcion = scan.nextInt();
@@ -58,9 +58,9 @@ public class Recursos_interes{
 				RecursosDeInteres();
 			}
 			else if (opcion == 6){
-				Vista vista = new Vista();
-				vista.MenuGeneral();
+				System.out.println("Regresando a menu!");
 			}
+			
 			else if (opcion > 6 || opcion <= 0 ){
 				RecursosDeInteres();
 			}

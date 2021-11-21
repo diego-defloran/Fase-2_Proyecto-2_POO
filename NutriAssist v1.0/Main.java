@@ -21,7 +21,7 @@ public class Main {
       int opcion = 0;
       boolean Acceso = false;
       boolean flag = true;
-      while (opcion != 4){
+      while (opcion != 9){
        vista.Nutri();
        opcion = vista.MenuGeneral();
        if (opcion ==1){
@@ -154,9 +154,7 @@ public class Main {
       
       else if (opcion ==6) {
     	  new Seguimiento();//Llamado a constructor de Seguimiento para la generecion de graficas en beta
-    	  System.out.println("Este apartado es una beta. Si desea colaborar con su opinión con respecto a esta funcionabilidad envie un\ncorreo a NutriAssist@gmail.com\nSu opinion nos interesa!");
-    	  vista.MenuGeneral();
-    	  
+    	  System.out.println("Este apartado es una beta. Si desea colaborar con su opinion con respecto a esta funcionabilidad envie un\ncorreo a NutriAssist@gmail.com\nSu opinion nos interesa!");  	  
       }
 	else if (opcion==7) {
     	  java.awt.EventQueue.invokeLater(new Runnable() {

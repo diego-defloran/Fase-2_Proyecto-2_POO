@@ -21,14 +21,14 @@ public class Vista {
 		int opcion=0;
 		while (flag==false){
 			try{
-				System.out.println("\n\nSeleccione que la opciÃ³n que le gustarÃ­a:\n" + "1. Ingresar\n"+"2. Registrarte\n"+"3. Consejos\n" +"4. Recursos de interes\n" +"5. Mostrar Info Nutricional personal\n" +"6. Seguimiento de hábitos (BETA)\n" + "7. Calculadora de cantidades"+ "8. Salir");
+				System.out.println("\n\nSeleccione que la opciÃ³n que le gustarÃ­a:\n" + "1. Ingresar\n"+"2. Registrarte\n"+"3. Consejos\n" +"4. Recursos de interes\n" +"5. Mostrar Info Nutricional personal\n" +"6. Seguimiento de hábitos (BETA)\n" + "7. Calculadora de cantidades\n"+ "8. Salir");
 				opcion = scan.nextInt();
 			} catch (InputMismatchException ex){
 				System.out.println("Debe ingresar un numero entero");
 				scan.next();
 				continue;
 			}
-			if (opcion==1 || opcion==2 || opcion==3|| opcion==4 || opcion==5 || opcion==6 || opcion==7){
+			if (opcion==1 || opcion==2 || opcion==3|| opcion==4 || opcion==5 || opcion==6 || opcion==7 || opcion==8){
 				flag=true;
 			} else {
 				System.out.println("OPCION INCORRECTA");

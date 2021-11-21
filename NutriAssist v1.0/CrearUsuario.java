@@ -72,7 +72,8 @@ public class CrearUsuario {
             }
             
          } catch (FileNotFoundException e){
-             e.printStackTrace();
+             //e.printStackTrace();
+             System.out.println("\n******ARCHIVO NO ENCONTRADO, CREE UN USUARIO*******\n");
          }catch (IOException e){
              e.printStackTrace();
          }

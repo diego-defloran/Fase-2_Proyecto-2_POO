@@ -51,14 +51,4 @@ class Carnes extends ConsejosNutricionales{
 		return blancas;
 	}
 	
-	public String Cantidad(int peso, int altura, int edad, int sexo){
-	//Método Cantidad, se utiliza overloading, retorna un string con la cantidad 
-	//Se reciben como parámetros los datos del usuario, se llama al método de la clase madre Calorías y se utiliza para el cálculo en gramos de las carnes
-		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
-		double calorias = Calorias(peso, altura, edad, sexo);
-		double cal = (((calorias*0.133)*100)/200);
-		int total = (int) cal;
-		mensaje = ("\nUsted debe consumir "+total+" gramos de carne al día\n");
-		return mensaje;
-	}
 }

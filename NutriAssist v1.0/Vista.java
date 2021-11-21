@@ -77,7 +77,7 @@ public class Vista {
 		while (flag==false){
 			System.out.println(m);
 			opcion = scan.nextInt();
-			if (opcion==1 || opcion==2){
+			if (opcion==1 || opcion==2 || opcion==3){
 				flag=true;
 			} else {
 				System.out.println("OPCION INCORRECTA");

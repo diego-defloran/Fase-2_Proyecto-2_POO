@@ -152,6 +152,7 @@ public class Main {
 		}
 		}
     } else if (opcion==4){
+    	//Recursos de interes
         Recursos_interes r = new Recursos_interes();//Llamado al constructor de clase Recursos_interes
         r.RecursosDeInteres();//Emplear metodo RecursosDeInteres
       }

@@ -24,17 +24,6 @@ abstract class ConsejosNutricionales implements FuncionalidadesConsejos{
 	}
 	
 	
-	public double Calorias(int peso, int altura, int edad, int sexo){
-	//Método de la clase madre que calcula las calorías para cada usuario según su peso, altura, edad y sexo. Devuelve el número de calorías. Se llama desde las clases hijas por eso es público
-		double calorias =0;
-		if(sexo==1){
-			//Femenino
-			calorias = ((655+(9.6*(peso/2.205))+(1.8*altura)-(4.7*edad))*1.375);
-		} else if (sexo==2){
-			calorias = ((66+(13.7*(peso/2.205))+(5*altura)-(6.75*edad))*1.375);
-		}
-		return calorias;
-	}
 	
 	
 

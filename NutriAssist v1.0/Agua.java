@@ -27,11 +27,5 @@ class Agua extends ConsejosNutricionales{
 		return mensaje;
 	}
 	
-	public String Cantidad(int peso, int altura, int edad, int sexo){
-		//Método Cantidad se implementa overloading
-		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
-		int agua = peso/16;
-		mensaje = ("\nUsted debe tomar "+agua+" vasos de agua al dia\n");
-		return mensaje;
-	}
+	
 }

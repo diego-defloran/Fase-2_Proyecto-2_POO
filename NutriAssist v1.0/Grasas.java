@@ -52,14 +52,5 @@ class Grasas extends ConsejosNutricionales{
 		return grasas;
 	}
 	
-	public String Cantidad(int peso, int altura, int edad, int sexo){
-	//Método Cantidad, se utiliza overloading, retorna un string con la cantidad 
-	//Se reciben como parámetros los datos del usuario, se llama al método de la clase madre Calorías y se utiliza para el cálculo en gramos de las grasas
-		mensaje = ("CUANTO DEBO CONSUMIR DE "+nombre);
-		double calorias = Calorias(peso, altura, edad, sexo);
-		double cal = ((calorias*0.25)/9);
-		int total = (int) cal;
-		mensaje = ("\nUsted debe consumir "+total+" gramos de grasa\n");
-		return mensaje;
-	}
+	
 }

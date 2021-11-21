@@ -7,6 +7,5 @@
 public interface FuncionalidadesConsejos{
 	String Beneficios();
 	String Ejemplos();
-	String Cantidad(int peso, int altura, int edad, int sexo);
 	
 }

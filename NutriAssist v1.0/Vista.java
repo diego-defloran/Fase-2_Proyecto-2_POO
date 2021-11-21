@@ -1,3 +1,4 @@
+package Nutri;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -20,7 +21,7 @@ public class Vista {
 		int opcion=0;
 		while (flag==false){
 			try{
-				System.out.println("\n\nSeleccione que la opciÃ³n que le gustarÃ­a:\n" + "1. Ingresar\n"+"2. Registrarte\n"+"3. Consejos\n" +"4. Recursos de interes\n" +"5. Mostrar Info Nutricional personal\n" +"6. Seguimiento de hábitos (BETA)\n" + "7. Salir");
+				System.out.println("\n\nSeleccione que la opciÃ³n que le gustarÃ­a:\n" + "1. Ingresar\n"+"2. Registrarte\n"+"3. Consejos\n" +"4. Recursos de interes\n" +"5. Mostrar Info Nutricional personal\n" +"6. Seguimiento de hábitos (BETA)\n" + "7. Calculadora de cantidades"+ "8. Salir");
 				opcion = scan.nextInt();
 			} catch (InputMismatchException ex){
 				System.out.println("Debe ingresar un numero entero");
@@ -76,7 +77,7 @@ public class Vista {
 		while (flag==false){
 			System.out.println(m);
 			opcion = scan.nextInt();
-			if (opcion==1 || opcion==2 || opcion==3){
+			if (opcion==1 || opcion==2){
 				flag=true;
 			} else {
 				System.out.println("OPCION INCORRECTA");
@@ -85,65 +86,7 @@ public class Vista {
 		return opcion;
 	}
 	
-	public int Peso(){
-		boolean flag = false;
-		int opcion=0;
-		while (flag==false){
-			System.out.println("\nIngrese su peso en libras\n");
-			opcion = scan.nextInt();
-			if (opcion>0){
-				flag=true;
-			} else {
-				System.out.println("OPCION INCORRECTA");
-			}
-		}
-		return opcion;
-	}
 	
-	public int Altura(){
-		boolean flag = false;
-		int opcion=0;
-		while (flag==false){
-			System.out.println("\nIngrese su altura en cm\n");
-			opcion = scan.nextInt();
-			if (opcion>0){
-				flag=true;
-			} else {
-				System.out.println("OPCION INCORRECTA");
-			}
-		}
-		return opcion;
-	}
-	
-	public int Edad(){
-		boolean flag = false;
-		int opcion=0;
-		while (flag==false){
-			System.out.println("\nIngrese su edad\n");
-			opcion = scan.nextInt();
-			if (opcion>0){
-				flag=true;
-			} else {
-				System.out.println("OPCION INCORRECTA");
-			}
-		}
-		return opcion;
-	}
-	
-	public int Sexo(){
-		boolean flag = false;
-		int opcion=0;
-		while (flag==false){
-			System.out.println("\nIngrese su sexo\n"+"1.Femenino\n"+"2.Masculino\n");
-			opcion = scan.nextInt();
-			if (opcion==1 || opcion ==2){
-				flag=true;
-			} else {
-				System.out.println("OPCION INCORRECTA");
-			}
-		}
-		return opcion;
-	}
 	
 	public void Opcion(String mensaje){
 		System.out.println(mensaje);

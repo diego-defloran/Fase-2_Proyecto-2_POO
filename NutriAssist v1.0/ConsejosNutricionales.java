@@ -19,8 +19,7 @@ abstract class ConsejosNutricionales implements FuncionalidadesConsejos{
 					"Seleccione la opcion que desea\n"+
 					"1. Beneficios de consumir "+nombre+"\n"+
 					"2. Ejemplos de "+nombre+"\n"+
-					"3. Cuanto debo consumir de "+nombre+"\n"+
-					"4. Salir\n";
+					"3. Salir\n";
 		return mensaje;
 	}
 	

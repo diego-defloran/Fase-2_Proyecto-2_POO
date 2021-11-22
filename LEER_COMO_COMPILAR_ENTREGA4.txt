@@ -1,9 +1,0 @@
-¿Cómo compilar NutriAssist?
-1. Asegúrese de haber descargado la carpeta comprimida llamada ENTREGA 4
-2. Extraiga la carpeta
-3. Abra Windows Powershell dentro de la carpeta ENTREGA 4
-4. Copie y pegue lo siguiente
-
-java -jar NutriAssist.jar
-
-5. Listo!
